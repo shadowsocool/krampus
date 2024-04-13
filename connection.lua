@@ -2,7 +2,7 @@ repeat task.wait() until game:IsLoaded()
 
 while task.wait(1) do 
     pcall(function()
-        local connection = websocket.connect("http://localhost:6547/")
+        local connection = websocket.connect("ws://localhost:6547/")
 
         connection:Send("CONNECT")
 
